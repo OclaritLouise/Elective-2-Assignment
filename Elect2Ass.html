@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<form action="test_page.php" method="GET">
+<input type="text" name="inp1" id="input1" onkeyup="nilsinenumine()"></input><br><br>
+<input type="text" name="inp2" id="input2" onkeyup="nilsinenumine()"></input><br><br>
+<input type="text" name="inp3" id="input3" onkeyup="nilsinenumine()"></input><br><br>
+<input type="text" name="inp4" id="input4" onkeyup="nilsinenumine()"></input><br><br>
+<input type="text" name="inp5" id="input5" onkeyup="nilsinenumine()"></input><br><br>
+</form>
+<script>
+function nilsinenumine(){
+var a = document.getElementById("input1");
+var e = document.getElementsByTagName("INPUT");
+for(var x = 0; x < e.length; x++){
+e[x].value = a.value;
+}
+}
+</script>
+</body>
+</html>
